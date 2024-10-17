@@ -2,10 +2,11 @@ import { toggleLanguage } from "../redux/languageSlice";
 import { useDispatch, useSelector } from "react-redux";
 import css from "./Navigation.module.css";
 import { NavLink } from "react-router-dom";
+import { selectLanguage } from "../redux/selectors";
 
 export default function Navigation() {
   const dispatch = useDispatch();
-  const language = useSelector((state) => state.language.language);
+  const language = useSelector(selectLanguage);
 
   const handleLanguageSwitch = () => {
     dispatch(toggleLanguage());

@@ -1,9 +1,10 @@
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { translations } from "../features/translations";
+import { selectLanguage } from "../redux/selectors";
 
 function Home() {
-  const language = useSelector((state) => state.language.language);
+  const language = useSelector(selectLanguage);
   const t = translations[language];
   return (
     <div>
