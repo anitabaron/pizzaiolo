@@ -1,0 +1,9 @@
+.navSet {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navLink {
+  display: flex;
+  gap: 20px;
+}

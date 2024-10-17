@@ -34,16 +34,19 @@ function People() {
         <div>
           <h3>{t.heading}</h3>
           <p>
-            {t.ingredientsF}: {recipe.flour}g
+            {t.ingredientsF}: {recipe.flour} g
           </p>
           <p>
-            {t.ingredientsW}: {recipe.water}ml
+            {t.ingredientsW}: {recipe.water} ml
           </p>
           <p>
-            {t.ingredientsY}: {recipe.yeast}g
+            {t.ingredientsH}: {recipe.honey} tablespoon
           </p>
           <p>
-            {t.ingredientsO}: {recipe.oil}ml
+            {t.ingredientsY}: {recipe.yeast} g
+          </p>
+          <p>
+            {t.ingredientsS}: {recipe.salt} g
           </p>
           <p>{t.recipeSteps}</p>
         </div>

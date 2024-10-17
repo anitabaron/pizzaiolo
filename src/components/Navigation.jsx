@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
 import { toggleLanguage } from "../redux/languageSlice";
 import { useDispatch, useSelector } from "react-redux";
+import css from "./Navigation.module.css";
+import { NavLink } from "react-router-dom";
 
 export default function Navigation() {
   const dispatch = useDispatch();
@@ -10,11 +11,15 @@ export default function Navigation() {
     dispatch(toggleLanguage());
   };
   return (
-    <div className="navset">
-      <nav>
-        <Link to="/">{language === "ENG" ? "Home" : "Strona Główna"}</Link>
-        {/* <Link to="/flour">{language === "ENG" ? "Flour" : "Mąka"}</Link> */}
-        {/* <Link to="/people">{language === "ENG" ? "People" : "Ludzie"}</Link> */}
+    <div className={css.navSet}>
+      <nav className={css.navLink}>
+        <NavLink to="/">
+          {language === "ENG" ? "Home" : "Strona Główna"}
+        </NavLink>
+        <NavLink to="/flour">{language === "ENG" ? "Flour" : "Mąka"}</NavLink>
+        <NavLink to="/people">
+          {language === "ENG" ? "People" : "Ludzie"}
+        </NavLink>
       </nav>
       <button onClick={handleLanguageSwitch}>
         {language === "ENG" ? "PL" : "ENG"}
