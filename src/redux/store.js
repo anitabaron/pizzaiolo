@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { flourReducer } from "./FlourSlice";
+import recipeReducer from "./recipeSlice";
+import languageReducer from "./languageSlice";
 
 export const store = configureStore({
   reducer: {
-    form: flourReducer,
+    recipe: recipeReducer,
+    language: languageReducer,
   },
 });

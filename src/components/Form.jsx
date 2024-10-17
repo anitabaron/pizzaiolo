@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { updateField } from "../redux/FlourSlice";
+import { updateField } from "../redux/recipeSlice";
 
 const Form = () => {
   const dispatch = useDispatch();
