@@ -19,8 +19,9 @@ function Flour() {
   };
 
   return (
-    <div>
+    <div className="container">
       <h2>{t.flourPageTitle}</h2>
+      <h4>{t.flourPageAdd}</h4>
       <select onChange={handleFlourChange} value={selectedFlour}>
         <option value="">{language === 'ENG' ? 'choose' : 'wybierz'}</option>
         {Object.keys(proportions)

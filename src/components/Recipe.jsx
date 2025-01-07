@@ -40,6 +40,9 @@ export default function Recipe() {
       <p className={css.recipeParagraph}>{t.recipeStepsParagraph}</p>
       <h3 className={css.recipeTitle}>{t.recipeSouceTitle}</h3>
       <p className={css.recipeParagraph}>{t.recipeSouceParagraph}</p>
+      <h3 className={css.recipeTitle}>{t.recipeBakeTitle}</h3>
+      <p className={css.recipeParagraph}>{t.recipeBakeParagraph}</p>
+      <div></div>
     </>
   );
 }
